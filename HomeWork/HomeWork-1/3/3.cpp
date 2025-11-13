@@ -67,20 +67,20 @@ int main()
 		unsigned long long A, B;
 		std::cin >> A >> B;
 
-		unsigned long long c = concat(A, B);
-		unsigned long long s = sortDigitsDesc(c);
+		unsigned long long concatNum = concat(A, B);
+		unsigned long long sortedDigit = sortDigitsDesc(concatNum);
 
-		if (s > best)
+		if (sortedDigit > best)
 		{
-			if (best != s)
+			if (best != sortedDigit)
 			{
 				second = best;
 			}
-			best = s;
+			best = sortedDigit;
 		}
-		else if (s < best && s > second)
+		else if (sortedDigit < best && sortedDigit > second)
 		{
-			second = s;
+			second = sortedDigit;
 		}
 	}
 
