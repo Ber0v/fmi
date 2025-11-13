@@ -1,6 +1,6 @@
 #include <iostream>
 
-unsigned long long pow10(unsigned int k)
+unsigned long long pow(unsigned int k)
 {
 	unsigned long long p = 1;
 	for (unsigned int i = 0; i < k; i++)
@@ -27,47 +27,31 @@ unsigned int digits(unsigned long long x)
 
 unsigned long long concat(unsigned long long a, unsigned long long b)
 {
-	return a * pow10(digits(b)) + b;
+	return a * pow(digits(b)) + b;
+}
+
+unsigned long long countDigit(unsigned long long x, int d)
+{
+	unsigned long long c = 0;
+	while (x > 0)
+	{
+		if (x % 10 == d) c++;
+		x /= 10;
+	}
+	return c;
 }
 
 unsigned long long sortDigitsDesc(unsigned long long x)
 {
-	int c0 = 0, c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0, c8 = 0, c9 = 0;
-	if (x == 0)
-	{
-		c0 = 1;
-	}
-	while (x > 0)
-	{
-		int d = x % 10;
-		switch (d)
-		{
-		case 0: c0++; break;
-		case 1: c1++; break;
-		case 2: c2++; break;
-		case 3: c3++; break;
-		case 4: c4++; break;
-		case 5: c5++; break;
-		case 6: c6++; break;
-		case 7: c7++; break;
-		case 8: c8++; break;
-		case 9: c9++; break;
-		}
-		x /= 10;
-	}
-
 	unsigned long long r = 0;
-	while (c9-- > 0) r = r * 10 + 9;
-	while (c8-- > 0) r = r * 10 + 8;
-	while (c7-- > 0) r = r * 10 + 7;
-	while (c6-- > 0) r = r * 10 + 6;
-	while (c5-- > 0) r = r * 10 + 5;
-	while (c4-- > 0) r = r * 10 + 4;
-	while (c3-- > 0) r = r * 10 + 3;
-	while (c2-- > 0) r = r * 10 + 2;
-	while (c1-- > 0) r = r * 10 + 1;
-	while (c0-- > 0) r = r * 10;
-
+	for (int d = 9; d >= 0; d--)
+	{
+		unsigned long long cnt = countDigit(x, d);
+		while (cnt-- > 0)
+		{
+			r = r * 10 + d;
+		}
+	}
 	return r;
 }
 
