@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Zad-1/Zad-1.vcxproj" Id="26886b74-970a-4891-a763-f682f3984ef6" />
+  <Project Path="Zad-2/Zad-2.vcxproj" Id="593400d4-d97d-48b2-a8e5-af85672cf757" />
+  <Project Path="Zad-3/Zad-3.vcxproj" Id="b7fb03a8-3c69-4f1a-b0a8-7f062c22ea14" />
+  <Project Path="Zad-4/Zad-4.vcxproj" Id="e996890a-eac1-438a-bb8f-185af626077c" />
+  <Project Path="Zad-5/Zad-5.vcxproj" Id="a1e505a0-2017-4929-bc0c-2fdfbd83ac48" />
+  <Project Path="Zad-6/Zad-6.vcxproj" Id="3d3d9c07-c77e-4563-a87b-59e7b23c4759" />
+</Solution>
