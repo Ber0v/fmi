@@ -1,28 +1,28 @@
 #include <iostream>
 
-unsigned long long pow(unsigned int k)
+unsigned long long pow(unsigned int num)
 {
-	unsigned long long p = 1;
-	for (unsigned int i = 0; i < k; i++)
+	unsigned long long result = 1;
+	for (unsigned int i = 0; i < num; i++)
 	{
-		p *= 10;
+		result *= 10;
 	}
-	return p;
+	return result;
 }
 
-unsigned int digits(unsigned long long x)
+unsigned int digits(unsigned long long num)
 {
-	if (x == 0)
+	if (num == 0)
 	{
 		return 1;
 	}
-	unsigned int c = 0;
-	while (x > 0)
+	unsigned int digitCount = 0;
+	while (num > 0)
 	{
-		c++;
-		x /= 10;
+		digitCount++;
+		num /= 10;
 	}
-	return c;
+	return digitCount;
 }
 
 unsigned long long concat(unsigned long long a, unsigned long long b)
@@ -30,29 +30,29 @@ unsigned long long concat(unsigned long long a, unsigned long long b)
 	return a * pow(digits(b)) + b;
 }
 
-unsigned long long countDigit(unsigned long long x, int d)
+unsigned long long countDigit(unsigned long long num, int digit)
 {
-	unsigned long long c = 0;
-	while (x > 0)
+	unsigned long long count = 0;
+	while (num > 0)
 	{
-		if (x % 10 == d) c++;
-		x /= 10;
+		if (num % 10 == digit) count++;
+		num /= 10;
 	}
-	return c;
+	return count;
 }
 
-unsigned long long sortDigitsDesc(unsigned long long x)
+unsigned long long sortDigitsDesc(unsigned long long num)
 {
-	unsigned long long r = 0;
-	for (int d = 9; d >= 0; d--)
+	unsigned long long result = 0;
+	for (int i = 9; i >= 0; i--)
 	{
-		unsigned long long cnt = countDigit(x, d);
-		while (cnt-- > 0)
+		unsigned long long countdigit = countDigit(num, i);
+		while (countdigit-- > 0)
 		{
-			r = r * 10 + d;
+			result = result * 10 + i;
 		}
 	}
-	return r;
+	return result;
 }
 
 int main()

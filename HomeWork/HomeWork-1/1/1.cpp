@@ -1,18 +1,18 @@
 #include <iostream>
 
-void line(int N, int i, bool mid)
+void line(int size, int level, bool mid)
 {
-	for (int j = 1;j <= i;j++)
+	for (int i = 1;i <= level;i++)
 	{
-		std::cout << j;
+		std::cout << i;
 	}
-	for (int j = 0;j < N + 2 * (N - i);j++)
+	for (int i = 0;i < size + 2 * (size - level);i++)
 	{
 		std::cout << (mid ? '-' : ' ');
 	}
-	for (int j = i;j >= 1;j--)
+	for (int i = level;i >= 1;i--)
 	{
-		std::cout << j;
+		std::cout << i;
 	}
 	std::cout << '\n';
 }

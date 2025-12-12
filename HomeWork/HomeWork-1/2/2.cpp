@@ -1,18 +1,18 @@
 #include <iostream>
 
-bool isPrime(long long x)
+bool isPrime(long long num)
 {
-	if (x < 2)
+	if (num < 2)
 	{
 		return false;
 	}
-	if (x % 2 == 0)
+	if (num % 2 == 0)
 	{
-		return x == 2;
+		return num == 2;
 	}
-	for (long long i = 3; i <= x / i; i += 2)
+	for (long long i = 3; i <= num / i; i += 2)
 	{
-		if (x % i == 0)
+		if (num % i == 0)
 		{
 			return false;
 		}
@@ -20,14 +20,14 @@ bool isPrime(long long x)
 	return true;
 }
 
-bool uniqueDigits(long long x)
+bool uniqueDigits(long long num)
 {
 	long long seen = 0;
-	while (x > 0)
+	while (num > 0)
 	{
-		int d = x % 10;
+		int digit = num % 10;
 		long long check = 1;
-		for (int i = 0; i < d; i++)
+		for (int i = 0; i < digit; i++)
 		{
 			check *= 10;
 		}
@@ -36,7 +36,7 @@ bool uniqueDigits(long long x)
 			return false;
 		}
 		seen += check;
-		x /= 10;
+		num /= 10;
 	}
 	return true;
 }
@@ -46,19 +46,19 @@ int main()
 	long long N;
 	std::cin >> N;
 
-	for (long long d = 0;; ++d)
+	for (long long i = 0;; ++i)
 	{
-		long long a = (N >= d ? N - d : -1);
-		if (a >= 2 && uniqueDigits(a) && isPrime(a))
+		long long leftNum = (N >= i ? N - i : -1);
+		if (leftNum >= 2 && uniqueDigits(leftNum) && isPrime(leftNum))
 		{
-			std::cout << a;
+			std::cout << leftNum;
 			break;
 		}
 
-		long long b = N + d;
-		if (d > 0 && uniqueDigits(b) && isPrime(b))
+		long long rightNum = N + i;
+		if (i > 0 && uniqueDigits(rightNum) && isPrime(rightNum))
 		{
-			std::cout << b;
+			std::cout << rightNum;
 			break;
 		}
 	}
