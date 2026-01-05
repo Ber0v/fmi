@@ -1,49 +1,31 @@
 #include <iostream>
 
-void line(int i, int N)
+int myAtoi(const char* str)
 {
-	for (int j = 0; j < N; j++)
-	{
-		if (j % 2 == 0) std::cout << '*';
-		else std::cout << ' ';
-	}
-}
+	int i = 0;
+	int result = 0;
+	int sign = 1;
 
-void mid(int i, int N)
-{
-	for (int j = 0; j < N; j++)
+	if (str[i] == '-')
 	{
-		if (j == N / 2) std::cout << '0';
-		else std::cout << ' ';
+		sign = -1;
+		i++;
 	}
-}
 
-void secondsLine(int i, int N)
-{
-	for (int j = 0; j < N; j++)
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (i % 2 == 0 && (j == 0 || j == N - 1)) std::cout << '*';
-		else if (j == i) std::cout << '+';
-		else if (j == N - i - 1) std::cout << '-';
-		else std::cout << ' ';
+		result = result * 10 + (str[i] - '0');
+		i++;
 	}
+
+	return result * sign;
 }
 
 int main()
 {
-	int N;
-	std::cin >> N;
+	char text[100];
+	std::cin.getline(text, 100);
 
-	if (N > 25 || (N % 2 == 0)) {
-		std::cout << "error";
-		return 0;
-	}
-
-	for (int i = 0; i < N; i++)
-	{
-		if (i == 0 || i == N - 1) line(i, N);
-		else if (i == N / 2) mid(i, N);
-		else secondsLine(i, N);
-		std::cout << '\n';
-	}
+	std::cout << myAtoi(text);
+	return 0;
 }
