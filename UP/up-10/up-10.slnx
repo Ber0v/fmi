@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="zad-1/zad-1.vcxproj" />
+  <Project Path="zad-10/zad-10.vcxproj" />
+  <Project Path="zad-2/zad-2.vcxproj" />
+  <Project Path="zad-3/zad-3.vcxproj" />
+  <Project Path="zad-4/zad-4.vcxproj" />
+  <Project Path="zad-5/zad-5.vcxproj" />
+  <Project Path="zad-6/zad-6.vcxproj" />
+  <Project Path="zad-7/zad-7.vcxproj" />
+  <Project Path="zad-8/zad-8.vcxproj" />
+  <Project Path="zad-9/zad-9.vcxproj" />
+</Solution>
