@@ -5,7 +5,7 @@
 * Faculty of Mathematics and Informatics of Sofia University
 * Winter semester 2025/2026
 *
-* @author Александър Беров
+* @author Alexander Berov
 * @idnumber 4MI0700413
 * @task 2
 * @compiler VC
