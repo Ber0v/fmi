@@ -1,0 +1,115 @@
+ZAD_1: sign
+
+sign :: Int -> Int
+sign x = if x > 1 then 1
+        else if x == 0 then 0
+        else -1
+
+main :: IO()
+main = do
+  print (sign (-10))
+
+ZAD_2: myAbs
+
+myAbs :: Int -> Int
+myAbs x = if x < 0 then -x
+          else x
+          
+main :: IO()
+main = do
+  print (myAbs (-10))
+
+ZAD_3: lastDigit
+
+lastDigit :: Int -> Int
+lastDigit x = x `mod` 10
+
+
+main :: IO()
+main = do
+  print (lastDigit (123))
+
+ZAD_4: isInInterval
+
+isInInterval :: Int -> Int -> Int -> Bool
+isInInterval x a b = x > a && x < b 
+                  
+
+main :: IO()
+main = do
+  print (isInInterval 3 1 5)
+
+ZAD_5: mid
+
+mid :: Int -> Int -> Int -> Int
+mid a b c = if ((min b c) < a) && (a < (max b c)) then a
+                else if ((min a c) < b) && (b < (max a c)) then b
+                else c
+
+main :: IO()
+main = do
+  print (mid 3 1 5)
+
+                                 //TasksForHome
+
+ZAD-1:isLeapYear 
+
+isLeapYear :: Int -> Bool
+isLeapYear year = (mod year 4 == 0 && mod year 100 /= 0) 
+                  || mod year 400 == 0
+                  
+
+main :: IO()
+main = do
+  print(isLeapYear 2000)
+
+ZAD-2:triangleArea
+
+triangleArea :: Double -> Double -> Double -> Double
+triangleArea a b c = 
+  let s = (a + b + c)/2
+  in sqrt(s*(s-a)*(s-b)*(s-c))
+
+main :: IO()
+main = do
+  print(triangleArea 3 4 5)
+
+ZAD-3: distance
+
+distance :: (Double, Double) -> (Double, Double) -> Double
+distance (a, b) (c,d) = sqrt((c-a)^2 + (d-b)^2 )
+
+main :: IO()
+main = do
+  print(distance (0,0)(3,4))
+
+ZAD-4: sumInterval
+
+sumInterval :: Int -> Int -> Int
+sumInterval a b = if(a == b) then a
+                  else a + sumInterval(a + 1) b
+
+main :: IO()
+main = do
+  print(sumInterval 1 5)
+
+ZAD-5: reverseDigits
+
+reverseDigits :: Int -> Int
+reverseDigits n = helper n 0
+  where
+    helper 0 acc = acc
+    helper x acc = helper (div x 10) (acc * 10 + mod x 10)
+    
+main :: IO()
+main = do
+  print(reverseDigits 123)
+
+ZAD-6: complexModulus
+
+complexModulus :: (Double, Double) -> Double
+complexModulus (a,b) = sqrt(a^2 + b^2)
+    
+main :: IO()
+main = do
+  print(complexModulus (3,4))
