@@ -1,0 +1,21 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Week-1/">
+    <Project Path="ZAD-1.1/ZAD-1.1.vcxproj" Id="616f52db-c2bc-422d-bc9f-770af69deeaf" />
+    <Project Path="ZAD-1.2/ZAD-1.2.vcxproj" Id="de7c8bbd-a510-4ccc-b1f3-fec35ddf16f9" />
+    <Project Path="ZAD-1.3/ZAD-1.3.vcxproj" Id="fa412b60-4eca-4652-9d28-cdd8e89ea3c8" />
+    <Project Path="ZAD-1.4/ZAD-1.4.vcxproj" Id="7f21e665-5abd-43aa-86ce-5775b48062f8" />
+  </Folder>
+  <Folder Name="/Week-2/">
+    <Project Path="ZAD-2.1/ZAD-2.1.vcxproj" Id="97cb6281-609c-4c80-93ad-faec21720302" />
+    <Project Path="ZAD-2.2/ZAD-2.2.vcxproj" Id="335c8629-19ae-482a-8767-f58191690ac3" />
+    <Project Path="ZAD-2.3/ZAD-2.3.vcxproj" Id="cb9e91ad-be81-4aec-ad43-616112bfe74b" />
+    <Project Path="ZAD-2.4/ZAD-2.4.vcxproj" Id="46deec00-1e1b-4e4a-83ef-5c1eeb3f7368" />
+    <Project Path="ZAD-2.5/ZAD-2.5.vcxproj" Id="9a9c8304-1ded-400d-b532-520709e5d3dc" />
+    <Project Path="ZAD-2.6/ZAD-2.6.vcxproj" Id="e14544b3-7acd-4098-a1ab-7f5bccd516d1" />
+    <Project Path="ZAD-2.7/ZAD-2.7.vcxproj" Id="e5fdfb5a-79e5-4922-bda5-036e4d8bfa3c" />
+  </Folder>
+</Solution>
