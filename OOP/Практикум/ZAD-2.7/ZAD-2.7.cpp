@@ -94,7 +94,7 @@ int cstrLen(const char* s)
 char* cstrDup(const char* s)
 {
 	int n = cstrLen(s);
-	char* r = new char[n + 1];
+	char* r = new (nothrow) char[n + 1];
 	for (int i = 0; i < n; i++) r[i] = s[i];
 	r[n] = '\0';
 	return r;
@@ -114,6 +114,11 @@ void readGame(Game& g)
 	cin >> buffer;
 
 	g.name = cstrDup(buffer);
+	if (!g.name)
+	{
+		cout << "404";
+		return;
+	}
 
 	cout << "Release date\n";
 	readDate(g.releaseDate);
@@ -202,7 +207,7 @@ int main()
 	cout << "N: ";
 	cin >> n;
 
-	Game* games = new Game[n];
+	Game* games = new (nothrow) Game[n];
 	for (int i = 0; i < n; i++)
 	{
 		games[i].name = nullptr;
