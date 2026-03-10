@@ -18,4 +18,16 @@
     <Project Path="ZAD-2.6/ZAD-2.6.vcxproj" Id="e14544b3-7acd-4098-a1ab-7f5bccd516d1" />
     <Project Path="ZAD-2.7/ZAD-2.7.vcxproj" Id="e5fdfb5a-79e5-4922-bda5-036e4d8bfa3c" />
   </Folder>
+  <Folder Name="/Week-3/">
+    <Project Path="ZAD-3.1/ZAD-3.1.vcxproj" Id="84deb89d-3fb3-4218-a7e2-e1bdd006ab10" />
+    <Project Path="ZAD-3.10/ZAD-3.10.vcxproj" Id="69a114a0-59d1-44de-9cd8-2e15a39b4223" />
+    <Project Path="ZAD-3.2/ZAD-3.2.vcxproj" Id="abf65330-5c58-4103-bb74-594e148b7744" />
+    <Project Path="ZAD-3.3/ZAD-3.3.vcxproj" Id="b46e8f89-530a-4375-8e5a-4ddf71257160" />
+    <Project Path="ZAD-3.4/ZAD-3.4.vcxproj" Id="217cdf1a-cfee-4dbd-9337-92eecb3fd48f" />
+    <Project Path="ZAD-3.5/ZAD-3.5.vcxproj" Id="fe783a70-1006-4f8f-ae25-36cce75056a6" />
+    <Project Path="ZAD-3.6/ZAD-3.6.vcxproj" Id="2cc8a3c8-8b12-4115-bf3c-e0fe1c277ad8" />
+    <Project Path="ZAD-3.7/ZAD-3.7.vcxproj" Id="91d3f57a-3411-43cd-a1fd-cc9c04d59393" />
+    <Project Path="ZAD-3.8/ZAD-3.8.vcxproj" Id="32f65c5c-0e5e-48c3-877f-627f369a9781" />
+    <Project Path="ZAD-3.9/ZAD-3.9.vcxproj" Id="fa271d6f-5165-4dd8-ba3c-e96f0fd8b917" />
+  </Folder>
 </Solution>
