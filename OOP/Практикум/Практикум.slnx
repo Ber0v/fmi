@@ -3,6 +3,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
   <Folder Name="/Week-1/">
     <Project Path="ZAD-1.1/ZAD-1.1.vcxproj" Id="616f52db-c2bc-422d-bc9f-770af69deeaf" />
     <Project Path="ZAD-1.2/ZAD-1.2.vcxproj" Id="de7c8bbd-a510-4ccc-b1f3-fec35ddf16f9" />
@@ -29,5 +32,12 @@
     <Project Path="ZAD-3.7/ZAD-3.7.vcxproj" Id="91d3f57a-3411-43cd-a1fd-cc9c04d59393" />
     <Project Path="ZAD-3.8/ZAD-3.8.vcxproj" Id="32f65c5c-0e5e-48c3-877f-627f369a9781" />
     <Project Path="ZAD-3.9/ZAD-3.9.vcxproj" Id="fa271d6f-5165-4dd8-ba3c-e96f0fd8b917" />
+  </Folder>
+  <Folder Name="/week-4/">
+    <Project Path="zad-4.1/zad-4.1.vcxproj" Id="0c8351e9-ba2f-442b-aba5-b810c46ed597" />
+    <Project Path="zad-4.2/zad-4.2.vcxproj" Id="e471943d-826b-4175-ae25-68bc6434295f" />
+    <Project Path="zad-4.3/zad-4.3.vcxproj" Id="321f0b67-377b-40fb-b9f8-80159923701e" />
+    <Project Path="zad-4.4/zad-4.4.vcxproj" Id="144fd7fa-06e7-4e41-960e-7c0f2d3ae0c7" />
+    <Project Path="zad-4.5/zad-4.5.vcxproj" Id="27b350e4-73a4-4557-a4bd-df2eee9af7ca" />
   </Folder>
 </Solution>
