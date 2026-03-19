@@ -40,4 +40,13 @@
     <Project Path="zad-4.4/zad-4.4.vcxproj" Id="144fd7fa-06e7-4e41-960e-7c0f2d3ae0c7" />
     <Project Path="zad-4.5/zad-4.5.vcxproj" Id="27b350e4-73a4-4557-a4bd-df2eee9af7ca" />
   </Folder>
+  <Folder Name="/week-5/">
+    <Project Path="zad-5.1/zad-5.1.vcxproj" Id="9552b79f-f303-44ac-98ff-185a53160e31" />
+    <Project Path="zad-5.2/zad-5.2.vcxproj" Id="36494339-edb2-4ddd-b8d8-07276067eeae" />
+    <Project Path="zad-5.3/zad-5.3.vcxproj" Id="fc19141b-a419-4074-a440-fdedb40e6f71" />
+    <Project Path="zad-5.4/zad-5.4.vcxproj" Id="69c9d152-c669-49ca-aec7-24d9771c7bc5" />
+    <Project Path="zad-5.5/zad-5.5.vcxproj" Id="557a61f6-23ba-4663-b7b0-f8d3438b36ac" />
+    <Project Path="zad-5.6/zad-5.6.vcxproj" Id="6c325da8-b4a8-4a01-a7f4-198d08a55885" />
+  </Folder>
+  <Folder Name="/week-6/" />
 </Solution>
