@@ -26,8 +26,7 @@ void Student::setName(const char* name)
 {
 	if (strlen(name) >= 32 && !name)
 	{
-		std::cout << "Name is too long :)";
-		return;
+		throw std::exception("Name is too long :)");
 	}
 
 	strcpy(this->name, name);

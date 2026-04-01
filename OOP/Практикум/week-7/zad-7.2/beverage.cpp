@@ -63,11 +63,11 @@ bool Beverage::getHaveAlcohol() const
 void Beverage::setName(const char* name)
 {
 	if (!name)
-		return;
+		throw std::exception("Invalid name\n");
 
-	delete[] this->name;
 
 	int len = strlen(name);
+	delete[] this->name;
 	this->name = new char[len + 1];
 	strcpy(this->name, name);
 }
@@ -77,7 +77,7 @@ void Beverage::setPrice(double price)
 	if (price >= 0.0)
 		this->price = price;
 	else
-		std::cout << "Invalid price\n";
+		throw std::exception("Invalid price\n");
 }
 
 void Beverage::setHaveAlcohol(bool Al)

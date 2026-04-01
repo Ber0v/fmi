@@ -1,6 +1,7 @@
 #include "Game.h"
 #include <iostream>
 #include <cstring>
+#include <exception>
 
 Game::Game()
 {
@@ -53,14 +54,12 @@ void Game::setTitle(const char* title)
 {
 	if (!title)
 	{
-		std::cout << "Invalid title\n";
-		return;
+		throw std::exception("Invalid title\n");
 	}
 
 	if (strlen(title) >= 64)
 	{
-		std::cout << "Title too long\n";
-		return;
+		throw std::exception("Title too long\n");
 	}
 
 	strcpy(this->title, title);
