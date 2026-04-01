@@ -28,6 +28,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="condition.md" />
+    <Text Include="task.md" />
   </ItemGroup>
 </Project>
