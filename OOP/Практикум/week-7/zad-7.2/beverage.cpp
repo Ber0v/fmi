@@ -65,11 +65,11 @@ void Beverage::setName(const char* name)
 	if (!name)
 		throw std::exception("Invalid name\n");
 
-
 	int len = strlen(name);
+	char* copy = new char[len + 1];
+	strcpy(copy, name);
 	delete[] this->name;
-	this->name = new char[len + 1];
-	strcpy(this->name, name);
+	this->name = copy;
 }
 
 void Beverage::setPrice(double price)
