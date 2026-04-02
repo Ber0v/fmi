@@ -72,19 +72,14 @@ bool string::isexist(char simbol) const
 
 void string::copy(const char* str)
 {
-	clear();
-
 	if (!str)
-	{
-		count = 0;
-		data = new char[1];
-		data[0] = '\0';
-		return;
-	}
+		throw std::exception("Invalid string\n");
 
 	count = strlen(str);
-	data = new char[count + 1];
-	strcpy(data, str);
+	char* copy = new char[count + 1];
+	strcpy(copy, str);
+	delete[] this->data;
+	this->data = copy;
 }
 
 void string::clear()
