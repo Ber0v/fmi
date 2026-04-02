@@ -4,7 +4,7 @@
 
 string::string()
 {
-	copy(nullptr);
+	copy("");
 }
 
 string::string(const char* str)
@@ -26,6 +26,20 @@ string& string::operator=(const string& str)
 	}
 
 	return *this;
+}
+
+bool string::operator==(const string& other) const
+{
+	if (count != other.count)
+		return false;
+
+	for (int i = 0; i < count; i++)
+	{
+		if (data[i] != other.data[i])
+			return false;
+	}
+
+	return true;
 }
 
 char& string::operator[](int index)
@@ -70,16 +84,19 @@ bool string::isexist(char simbol) const
 	return false;
 }
 
+const char* string::c_str() const
+{
+	return data;
+}
+
 void string::copy(const char* str)
 {
 	if (!str)
-		throw std::exception("Invalid string\n");
+		str = "";
 
 	count = strlen(str);
-	char* copy = new char[count + 1];
-	strcpy(copy, str);
-	delete[] this->data;
-	this->data = copy;
+	data = new char[count + 1];
+	strcpy(data, str);
 }
 
 void string::clear()

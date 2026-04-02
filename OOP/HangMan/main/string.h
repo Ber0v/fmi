@@ -8,6 +8,7 @@ public:
 	string(const char* str);
 	string(const string& str);
 	string& operator=(const string& str);
+	bool operator==(const string& other) const;
 	char& operator[](int index);
 	const char& operator[](int index) const;
 	friend std::ostream& operator<<(std::ostream& os, const string& str);
@@ -16,6 +17,7 @@ public:
 	//methods
 	int len() const;
 	bool isexist(char simbol) const;
+	const char* c_str() const;
 
 private:
 	void copy(const char* str);
