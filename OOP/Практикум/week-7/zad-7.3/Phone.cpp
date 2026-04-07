@@ -6,6 +6,7 @@ Phone::Phone()
 	:model(nullptr), batteryLevel(100), OSversion(1), soundLevel(0)
 {
 	setModel("Unknown");
+
 }
 
 Phone::Phone(const char* model, unsigned batteryLevel, unsigned OSversion)
@@ -14,7 +15,6 @@ Phone::Phone(const char* model, unsigned batteryLevel, unsigned OSversion)
 {
 	setModel(model);
 }
-
 Phone::Phone(const Phone& other)
 	: model(nullptr), batteryLevel(other.batteryLevel),
 	OSversion(other.OSversion), soundLevel(other.soundLevel)
