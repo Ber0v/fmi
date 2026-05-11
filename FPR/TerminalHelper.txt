@@ -1,0 +1,6 @@
+ghci zad-1.hs
+:quit
+cd folder
+ghci zad-1.hs
+zad-1.hs
+main

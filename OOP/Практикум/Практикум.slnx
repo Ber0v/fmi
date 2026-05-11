@@ -3,6 +3,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/past-exams/">
+    <Project Path="past-exams/k1-2025/k1-2025.vcxproj" Id="b11d6b95-7cce-484b-ada7-b456575ab881" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>
@@ -11,6 +14,9 @@
     <Project Path="ZAD-1.2/ZAD-1.2.vcxproj" Id="de7c8bbd-a510-4ccc-b1f3-fec35ddf16f9" />
     <Project Path="ZAD-1.3/ZAD-1.3.vcxproj" Id="fa412b60-4eca-4652-9d28-cdd8e89ea3c8" />
     <Project Path="ZAD-1.4/ZAD-1.4.vcxproj" Id="7f21e665-5abd-43aa-86ce-5775b48062f8" />
+  </Folder>
+  <Folder Name="/week-11/">
+    <Project Path="zad-11.1/zad-11.1.vcxproj" Id="29689fa7-c669-4199-af66-8555bbb89a1d" />
   </Folder>
   <Folder Name="/Week-2/">
     <Project Path="ZAD-2.1/ZAD-2.1.vcxproj" Id="97cb6281-609c-4c80-93ad-faec21720302" />
@@ -63,5 +69,10 @@
     <Project Path="week-8/zad-8.1/zad-8.1.vcxproj" Id="1610d7b6-d874-4f52-8c49-1e219c460d23" />
     <Project Path="week-8/zad-8.2/zad-8.2.vcxproj" Id="a1f1f60a-f9a1-4eea-b29a-27bcbfde7936" />
     <Project Path="week-8/zad-8.3/zad-8.3.vcxproj" Id="51c32cf7-dd56-482c-a08c-cb351cb9e015" />
+    <Project Path="week-8/zad-8.4/zad-8.4.vcxproj" Id="02e6c97c-af73-43d1-a1cd-cb16d4f2ad8c" />
+  </Folder>
+  <Folder Name="/week-9/">
+    <Project Path="week-9/zad-9.1/zad-9.1.vcxproj" Id="b1360ecc-e291-4e5f-80bc-94af37f0155d" />
+    <Project Path="week-9/Zad-9.2/Zad-9.2.vcxproj" Id="bc9f7656-7898-4c84-9076-cff1ff257f67" />
   </Folder>
 </Solution>

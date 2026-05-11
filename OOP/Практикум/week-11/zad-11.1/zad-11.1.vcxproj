@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f8b7c0f6-ee09-4093-8218-6377630de41f}</ProjectGuid>
-    <RootNamespace>main</RootNamespace>
+    <ProjectGuid>{E301AA3C-B703-4496-A7CF-D0F8B734AC94}</ProjectGuid>
+    <RootNamespace>zad111</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,20 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="string.cpp" />
-    <ClCompile Include="User.cpp" />
-    <ClCompile Include="UserManager.cpp" />
-    <ClCompile Include="Words.cpp" />
+    <ClCompile Include="Bicycle.cpp" />
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
+    <ClCompile Include="zad-11.1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="string.h" />
-    <ClInclude Include="User.h" />
-    <ClInclude Include="UserManager.h" />
-    <ClInclude Include="Words.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="task.md" />
+    <ClInclude Include="Bicycle.h" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
