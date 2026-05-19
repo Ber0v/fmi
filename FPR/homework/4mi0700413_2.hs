@@ -94,7 +94,7 @@ refine step method (IntegralInfo f (a,b)) =
     SimpsonUniform -> map (\n -> quadSimpson n f a b) ns
     SimpsonAdaptive cfg -> repeat (quadSimpsonAdaptive cfg f a b)
   where
-    ns = iterate (* step) 1
+    ns = iterate (* step) 1-
 
 -- zad-12
 convergesIn :: Int -> Double -> Int -> Method -> IntegralInfo -> Either () Int
@@ -111,7 +111,7 @@ convergesIn maxIter eps step method info =
         SimpsonUniform -> useUniform quadSimpson n info
         SimpsonAdaptive cfg -> useAdaptive cfg info
 
-    check i (x:y:xs)
+    check i (x:y:xs) 
       | abs (x - y) < eps && i == 1 = Right 1
       | i + 1 > maxIter = Left ()
       | abs (x - y) < eps = Right (i + 1)
@@ -153,6 +153,9 @@ build f a b eps depth
     val = simpson f a b
     leftVal = simpson f a m
     rightVal = simpson f m b
+
+
+
 
 main :: IO ()
 main = do

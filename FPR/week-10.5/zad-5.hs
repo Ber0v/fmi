@@ -1,3 +1,7 @@
+data IntTree
+  = Empty
+  | Node Int IntTree IntTree
+
 delete :: Int -> IntTree -> IntTree
 delete _ Empty = Empty
 delete x (Node v left right)
